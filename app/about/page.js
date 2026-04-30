@@ -1,21 +1,21 @@
 import Link from "next/link";
 
-export default function Home() {
+export default function About() {
   return (
     <main style={{
       minHeight: "100vh",
       padding: "60px",
       fontFamily: "Arial, sans-serif",
-      background: "#f7f4ef"
+      background: "#eef3f7"
     }}>
-      <h1>My COGS 125 Portfolio</h1>
+      <h1>About This Project</h1>
 
       <p style={{ fontSize: "18px", maxWidth: "600px", lineHeight: "1.6" }}>
-        Hello! This is my Next.js project for Assignment 3.1.
-        I deployed this site and added a simple page interaction using routing.
+        This page demonstrates a simple interaction in Next.js.
+        The button uses routing to move between two pages.
       </p>
 
-      <Link href="/about">
+      <Link href="/">
         <button style={{
           marginTop: "24px",
           padding: "12px 18px",
@@ -26,7 +26,7 @@ export default function Home() {
           fontSize: "16px",
           cursor: "pointer"
         }}>
-          Go to About Page
+          Back Home
         </button>
       </Link>
     </main>
